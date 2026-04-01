@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Edição de Vídeo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="header">
+      <a href="#" class="logo">Gabriel Lopes.</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#inicio" class="nav-link nav-link--active">Início</a>
+        <a href="#reels" class="nav-link">Reels</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#contato" class="btn btn--ghost">Sobre</a>
+        <a href="mailto:seu@email.com" class="btn btn--primary">Orçamento</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-inner">
+          <p class="hero-kicker">Portfólio</p>
+          <h1 class="hero-title">Edição que move</h1>
+          <p class="hero-subtitle">
+            Cortes dinâmicos, ritmo e identidade visual para marcas e criadores
+            que querem se destacar no feed.
+          </p>
+        </div>
+      </section>
+
+      <section id="reels" class="reels-section">
+        <div class="section-head">
+          <p class="section-kicker"><span class="section-num">02</span> Reels & shorts</p>
+          <h2 class="section-title">Vídeos verticais</h2>
+          <p class="section-desc">
+            Formato 9:16 para Instagram, TikTok e YouTube Shorts — arraste para o lado.
+          </p>
+        </div>
+
+        <div class="reels-scroll" role="region" aria-label="Carrossel de reels">
+          <!-- Para usar seu vídeo: dentro de .reel-frame, adicione
+               <video class="reel-video" muted loop playsinline><source src="seu.mp4" type="video/mp4"></video> -->
+          <article class="reel-card">
+            <div class="reel-frame">
+              <div class="reel-placeholder" data-label="Reel 01"></div>
+            </div>
+            <p class="reel-caption">Campanha — marca</p>
+          </article>
+
+          <article class="reel-card">
+            <div class="reel-frame">
+              <div class="reel-placeholder" data-label="Reel 02"></div>
+            </div>
+            <p class="reel-caption">Evento — aftermovie</p>
+          </article>
+
+          <article class="reel-card">
+            <div class="reel-frame">
+              <div class="reel-placeholder" data-label="Reel 03"></div>
+            </div>
+            <p class="reel-caption">Produto — UGC</p>
+          </article>
+
+          <article class="reel-card">
+            <div class="reel-frame">
+              <div class="reel-placeholder" data-label="Reel 04"></div>
+            </div>
+            <p class="reel-caption">Motion — tipografia</p>
+          </article>
+
+          <article class="reel-card">
+            <div class="reel-frame">
+              <div class="reel-placeholder" data-label="Reel 05"></div>
+            </div>
+            <p class="reel-caption">Cliente — depoimento</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="contact-section">
+        <div class="contact-card glass">
+          <p class="section-kicker"><span class="section-num">03</span> Contato</p>
+          <h2 class="section-title">Vamos conversar</h2>
+          <p class="contact-text">
+            Substitua os placeholders pelos seus vídeos em <code>index.html</code> e
+            atualize seu e-mail no rodapé.
+          </p>
+          <a href="mailto:seu@email.com" class="btn btn--primary btn--large">seu@email.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 — Portfólio edição de vídeo</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
