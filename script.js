@@ -159,3 +159,38 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializa o carrossel na carga da página
   updateCarousel();
 });
+
+/**
+ * Controle das Abas de Vídeos (Longos / Curtos)
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".video-tab");
+  const panels = document.querySelectorAll(".video-panel");
+
+  if (tabs.length === 0) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const targetId = tab.getAttribute("aria-controls");
+
+      // Atualiza abas
+      tabs.forEach((t) => {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+
+      // Atualiza painéis
+      panels.forEach((panel) => {
+        if (panel.id === targetId) {
+          panel.removeAttribute("hidden");
+          panel.classList.add("active");
+        } else {
+          panel.setAttribute("hidden", "");
+          panel.classList.remove("active");
+        }
+      });
+    });
+  });
+});
