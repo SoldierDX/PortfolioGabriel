@@ -147,16 +147,12 @@
 }
 
 .vcard__thumb iframe {
+  position: relative;
+  z-index: 3; /* acima do gradiente para controles sempre acessíveis */
   width: 100%;
   height: 100%;
   border: none;
   display: block;
-  pointer-events: none;
-}
-
-/* Permite interação com o iframe após hover no card */
-.vcard:hover .vcard__thumb iframe {
-  pointer-events: auto;
 }
 
 /* Gradiente sutil no rodapé do thumb */
@@ -171,6 +167,7 @@
 
 .vcard:hover .vcard__gradient {
   opacity: 0;
+  pointer-events: none; /* garante que não bloqueia cliques no player */
 }
 
 /* Badge "Short" no canto superior direito */
